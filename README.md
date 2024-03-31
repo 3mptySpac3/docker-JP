@@ -124,4 +124,4 @@ Here are some Docker best practices followed in this project:
 
 ---
 
-Read Docker.Documentations[Docker.Documentation.pdf] for more details
+Read [Docker Documentation](Docker.Documentation.pdf) for more details.
