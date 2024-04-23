@@ -28,3 +28,4 @@ services:  # Defines the services that make up your application
 
 volumes:  # Declares named volumes that can be used by the services
   db_data:  # Named volume for persisting database data
+  
