@@ -23,8 +23,8 @@ Before beginning with this project, ensure you have the following installed on y
 1. **Clone this repository:**
 
    ```bash
-   gh repo clone 3mptySpac3/docke-JP
-   cd docke-JP
+   gh repo clone 3mptySpac3/docker-JP
+   cd docker-JP
    ```
 
 ## Challenge 1: Static Web Server
