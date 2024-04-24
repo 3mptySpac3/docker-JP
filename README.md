@@ -77,6 +77,27 @@ Access the Node.js application at:
 http://localhost:8080/api/books
 ```
 
+## Challenge 3: Full-Stack Application
+
+For Challenge 3, navigate to the challenge3 directory. This challenge involves integrating a database into the application stack.
+
+```bash
+cd challenge3
+docker-compose up --build
+```
+
+## Challenge 4: Scaling an Application
+
+Challenge 4 extends the previous setup by scaling the Node.js service to run 3 instances. This demonstrates the application's scalability and high availability.
+
+```bash
+cd challenge3
+docker-compose up -d --scale node-service=3
+```
+
+Make several requests to `http://localhost:8080/api/stats` and observe different hostnames in the JSON response, confirming that load balancing across instances is functioning.
+ 
+
 ## Stopping the Project
 
 ---
@@ -109,8 +130,16 @@ This project is structured into two main directories, each representing a challe
 
 - `challenge1/`: Contains a Dockerfile and a `public` folder. The Dockerfile sets up an Nginx server that serves static content from the `public` directory.
 - `challenge2/`: Includes a Dockerfile for a Node.js application and a `docker-compose.yml` file for running the Node.js app alongside Nginx, which acts as a reverse proxy.
+- `challenge3/`: Builds upon the previous challenges by introducing a database layer. It includes the following subdirectories:
+  - api/: Houses the `Node.js` application code and `Dockerfile`.
+  - db/: Contains database initialization scripts and is configured through `docker-compose.yml` to use a `MariaDB` image.
+  - nginx/: Contains the `Nginx` configuration files necessary for reverse proxy setup.
+The `docker-compose.yml` in the challenge3 directory orchestrates the full-stack application, bringing together the web server, application server, and database into a cohesive unit.
 
-Each directory contains all necessary files to build and run the Docker containers for the respective challenge.
+- `challenge4/`: Utilizes the docker-compose.yml from Challenge 3 with added command-line operations to scale the Node.js application. It demonstrates how to handle increased load by running multiple instances of a service.
+
+Each directory contains all the necessary files to build and run the Docker containers for the respective challenge.
+
 
 ## Best Practices
 
@@ -124,4 +153,6 @@ Here are some Docker best practices followed in this project:
 
 ---
 
-Read [Docker Documentation](Docker.Documentation.pdf) for more details.
+Read [Docker Documentation](Docker.Documentation.pdf) for more details on `Challenge 1` and `Challenge 2`.
+
+Read [Docker Final Documentation](Docker.FinaleDocumentaion.pdf) for more details on `Challenge 3` and `Challenge 4`.
