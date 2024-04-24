@@ -155,4 +155,4 @@ Here are some Docker best practices followed in this project:
 
 Read [Docker Documentation](Docker.Documentation.pdf) for more details on `Challenge 1` and `Challenge 2`.
 
-Read [Docker Final Documentation](Docker.FinaleDocumentaion.pdf) for more details on `Challenge 3` and `Challenge 4`.
+Read [Docker Final Documentation](Docker.FinaleDocumentation.pdf) for more details on `Challenge 3` and `Challenge 4`.
